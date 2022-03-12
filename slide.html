@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Slide</title>
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="./slide.css">
+</head>
+<body>
+    <main>
+        <aside>
+
+           <div class="logo">
+               <img src="./images/laswa.png" alt="logo">
+           </div>
+           <div class="menu-bar">
+                <i class="icofont-navigation-menu"></i>
+           </div>
+           <i class="icofont-log-out"></i>
+        </aside>
+
+        <!-- <div class="map"></div> -->
+        
+        <header>
+            <div class="user">
+                <div class="name">
+                    <p>John West</p>
+                    <p>Admin</p>
+                </div>
+                <div class="user-image">
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+        </header>
+        
+        <div class="container">
+
+            <div class="heading">
+                <h2>BADORE FERRY TERMINAL</h2>
+                <div class="close-icon"><i class="icofont-close close"></i></div>
+            </div>
+            <div class="location">
+                <p>Lagos, Nigeria</p>
+            </div>
+
+            <div class="content">
+
+                <div class="left-side">
+                        <div class="ferry-image">
+                            <img src="./images/PIX-0001.jpg" alt="">
+                        </div>
+
+                    <div class="terminal-section">
+                        <div class="terminal-cord">
+                            <p>Terminal Cordinates</p>
+                            <p>Lat - <span class="number">6.511339</span></p>
+                            <p>Lon - <span class="number">3.6163807</span></p>
+                        </div>
+
+                        <div class="terminal-type">
+                            <p>Terminal Type</p>
+                            <div class="terminal-type-content">
+                                <div class="icon"> <i class="icofont-bricks"></i></div>
+                                <p>Concrete</p>
+                            </div>
+                        </div>
+
+                        <div class="terminal">
+                            <p>Terminal</p>
+                            <div class="terminal-content">
+                                <div class="icon"> <i class="icofont-bricks"></i></div>
+                                <p>Terminal</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="travel-time-section">
+                        <div class="first-section">
+                            <div class="travel-container">
+                                <p>Travel Time Between Major Terminal</p>
+                                <i onclick="previous()" class="icofont-rounded-left left icon"></i>
+                                <i onclick="next()" class="icofont-rounded-right right icon"></i>
+                            </div>
+                            
+                        <h4>Badore Terminal</h4>
+                        <div class="terminal-destination">
+                            <div class="terminal">
+                                <p>Terminal</p>
+                                <h4 id="location"></h4>
+                            </div>
+                            
+                            <div class="Destination">
+                                <p>Destination</p>
+                                <h4 id="amount"></h4>
+                            </div>
+                        </div>
+                        <p >Estimated Time Taken ( <span id="time">  </span>)</p>
+                        <table class="estimate-table">
+                            <thead>
+                            </tr>
+                            <td>Departure</td>
+                            <td>Arrival</td>
+                            <td>Departure</td>
+                            <td>Arrival</td>
+                            <tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="first"></td>
+                                    <td class="second"></td>
+                                    <td class="third"></td>
+                                    <td class="fourth"></td>
+                                </tr>
+                                <tr>
+                                    <td class="fifth"></td>
+                                    <td class="sixth"></td>
+                                    <td class="seventh"></td>
+                                    <td class="eighth"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="daily-boat-count">
+                        <h4>Daily Boat Count</h4>
+                        <table class="boat-table">
+                            <thead>
+                                </tr>
+                                    <th>In</th>
+                                    <th>Out</th> 
+                                <tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Mon</spann> 60 72</td>
+                                    <td>75</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Tue</spann> 60 72</td>
+                                            <td>75</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Wed</spann> 60 72</td>
+                                            <td>56</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Thu</spann> 60 72</td>
+                                            <td>76</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Fri</spann> 60 72</td>
+                                            <td>75</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Sat</spann> 60 72</td>
+                                            <td>56</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span>Sun</spann> 60 72</td>
+                                            <td>56</td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="right-side">
+                        <div class="terminal-supervisor">
+                            <div class="supervisor-theme">
+                                <div class="icon">
+                                    <i class="icofont-users"></i>
+                                </div>
+                                <h4>Terminal Supervisors</h4>
+                            </div>
+                            <ul>
+                                <li>Mr. Adigun Wale</li>
+                                <li>Mr. Julius Kala</li>
+                            </ul >
+                        </div>
+
+                        <div class="Jetty-information">
+                            <h4>Jetty Informations</h4>
+                            <p>Numbers of Jetty</p>
+                            <ul>
+                                <li> 6 </li>
+                            </ul>
+                        </div>
+
+                        <div class="safety-jacket">
+                            <h4>Available Safety Jacket</h4>
+                            <ul>
+                                <li> 8 Dozens </li>
+                            </ul>
+                        </div>
+
+                        <div class="passengers">
+                            <h4>Perssengers per Boat</h4>
+                            <ul>
+                                <li> 20 Passengers </li>
+                            </ul>
+                        </div>
+
+                        <div class="price">
+                            <h4>Price Per Trip</h4>
+                            <p>Badore - Five Cowries</p>
+                            <ul>
+                                <li> N 1000 </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+    </main>
+        
+
+
+    <script src="script.js"></script>
+</body>
+</html>
